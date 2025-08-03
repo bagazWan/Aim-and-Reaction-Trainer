@@ -1,0 +1,48 @@
+.results {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.results h3 {
+    color: rgb(74, 85, 104);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.result-value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(102, 126, 234);
+    margin-bottom: 1rem;
+}
+
+.result-stats {
+    margin: 2rem 0;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(247, 250, 252);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.stat-label {
+    font-weight: 600;
+    color: rgb(74, 85, 104);
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(102, 126, 234);
+}
+
+.result-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}

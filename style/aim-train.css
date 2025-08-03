@@ -1,0 +1,106 @@
+.mode-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.mode-card {
+    background: rgb(247, 250, 252);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.mode-card:hover {
+    border-color: rgb(102, 126, 234);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.mode-card h3 {
+    color: rgb(74, 85, 104);
+    margin-bottom: 0.5rem;
+}
+
+.mode-card p {
+    color: rgb(113, 128, 150);
+    margin-bottom: 1.5rem;
+}
+
+.mode-config {
+    margin-bottom: 1.5rem;
+}
+
+.mode-config label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgb(74, 85, 104);
+    font-weight: 600;
+}
+
+.mode-config input, .mode-config select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.mode-config input:focus, .mode-config select:focus {
+    outline: none;
+    border-color: rgb(102, 126, 234);
+}
+
+.aim-game-area {
+    margin-top: 2rem;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgb(247, 250, 252);
+    border-radius: 10px;
+}
+
+.game-stats {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.aim-canvas {
+    width: 100%;
+    height: 500px;
+    background: rgb(45, 55, 72);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.target {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, rgb(229, 62, 62) 0%, rgb(197, 48, 48) 50%, rgb(155, 44, 44) 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: 0 0 20px rgba(229, 62, 62, 0.5);
+    transition: all 0.1s ease;
+}
+
+.target:hover {
+    transform: scale(1.1);
+}
+
+.target.hit {
+    background: radial-gradient(circle, rgb(56, 161, 105) 0%, rgb(47, 133, 90) 50%, rgb(39, 103, 73) 100%);
+    box-shadow: 0 0 20px rgba(56, 161, 105, 0.5);
+}
